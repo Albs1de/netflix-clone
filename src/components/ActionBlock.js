@@ -5,7 +5,9 @@ const GetMovies = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch(`https://www.omdbapi.com/?s=Movies&page=1&apikey=b3224b81`)
+    fetch(
+      `https://www.omdbapi.com/?s=Movies&page=1&apikey=${process.env.REACT_APP_API_KEY}`
+    )
       .then((response) => response.json())
       .then((data) => setMovies(data.Search))
       .catch((error) => console.error("Error:", error));
