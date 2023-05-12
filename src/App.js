@@ -8,7 +8,7 @@ import GetMovies from "./components/ActionBlock";
 import GetSeries from "./components/SeriesBlock";
 function App() {
   return (
-    <>
+    <div className="app-div">
       <Router>
         <Navbar />
         <Routes>
@@ -17,7 +17,7 @@ function App() {
       </Router>
       <GetMovies />
       <GetSeries />
-    </>
+    </div>
   );
 }
 

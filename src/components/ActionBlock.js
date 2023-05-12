@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CarouselFade from "./Carousel";
-
+import "../styles/ActionBlock.css";
 const GetMovies = () => {
   const [movies, setMovies] = useState([]);
 
@@ -15,6 +15,7 @@ const GetMovies = () => {
 
   return (
     <div>
+      <p>Some random Movies</p>
       <CarouselFade movieOrTVShow={movies} />;
     </div>
   );

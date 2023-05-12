@@ -40,3 +40,9 @@
     transform: rotate(360deg);
   }
 }
+.app-div {
+  background-color: black;
+}
+footer {
+  background-color: black;
+}

@@ -1,6 +1,7 @@
+// GetSeries.js
 import React, { useEffect, useState } from "react";
 import CarouselFade from "./Carousel";
-
+import "../styles/SeriesBlock.css";
 const GetSeries = () => {
   const [tvShow, setTvShow] = useState([]);
 
@@ -15,7 +16,8 @@ const GetSeries = () => {
 
   return (
     <div>
-      <CarouselFade movieOrTVShow={tvShow} />;
+      <p>Some random Series</p>
+      <CarouselFade movieOrTVShow={tvShow} />
     </div>
   );
 };
