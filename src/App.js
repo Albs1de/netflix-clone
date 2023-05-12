@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ShowMovies from "./components/ShowMovies";
 import GetMovies from "./components/ActionBlock";
-
+import GetSeries from "./components/SeriesBlock";
 function App() {
   return (
     <>
@@ -16,6 +16,7 @@ function App() {
         </Routes>
       </Router>
       <GetMovies />
+      <GetSeries />
     </>
   );
 }

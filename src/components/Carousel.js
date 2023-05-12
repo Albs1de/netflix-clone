@@ -3,17 +3,22 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../styles/Carousel.css";
 import { Carousel } from "react-responsive-carousel";
 
-function CarouselFadeExample({ movies }) {
+function CarouselFade({ movieOrTVShow }) {
   return (
     <Carousel autoPlay infiniteLoop showThumbs={false} showIndicators={false}>
-      {movies.map((movie, index) => (
-        <div key={index}>
-          <img className="w-25 h-50" src={movie.Poster} alt={movie.Title} />
-          <p className="legend">{movie.Title}</p>
-        </div>
-      ))}
+      {movieOrTVShow &&
+        movieOrTVShow.map((item, index) => (
+          <div key={index}>
+            <img
+              className="w-25 h-50"
+              src={`https://image.tmdb.org/t/p/w500${item.backdrop_path}`}
+              alt={item.title}
+            />
+            <p className="legend">{item.title || item.name}</p>
+          </div>
+        ))}
     </Carousel>
   );
 }
 
-export default CarouselFadeExample;
+export default CarouselFade;

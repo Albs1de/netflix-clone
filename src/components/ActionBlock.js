@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from "react";
-import CarouselFadeExample from "./Carousel";
+import CarouselFade from "./Carousel";
 
 const GetMovies = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     fetch(
-      `https://www.omdbapi.com/?s=Movies&page=1&apikey=${process.env.REACT_APP_API_KEY}`
+      `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc`
     )
       .then((response) => response.json())
-      .then((data) => setMovies(data.Search))
-      .catch((error) => console.error("Error:", error));
+      .then((response) => setMovies(response.results))
+      .catch((err) => console.error(err));
   }, []);
 
   return (
     <div>
-      <CarouselFadeExample movies={movies} />;
+      <CarouselFade movieOrTVShow={movies} />;
     </div>
   );
 };
