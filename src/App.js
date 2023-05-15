@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import ShowMovies from "./components/ShowMovies";
-import GetMovies from "./components/ActionBlock";
-import GetSeries from "./components/SeriesBlock";
+import ShowActualMovie from "./components/ShowActualMovie";
+import GetRandomMovies from "./components/RandomActionBlock";
+import GetRandomSeries from "./components/RandomSeriesBlock";
 import ShowSeries from "./components/ShowSeries";
 function App() {
   return (
@@ -17,8 +17,9 @@ function App() {
             path="/"
             element={
               <>
-                <ShowMovies />
-                <GetMovies />
+                <ShowActualMovie />
+                <GetRandomMovies />
+                <GetRandomSeries />
               </>
             }
           />
@@ -27,7 +28,7 @@ function App() {
             element={
               <>
                 <ShowSeries />
-                <GetSeries />
+                <GetRandomSeries />
               </>
             }
           />

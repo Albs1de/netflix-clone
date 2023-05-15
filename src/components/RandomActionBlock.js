@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CarouselFade from "./Carousel";
 import "../styles/ActionBlock.css";
-const GetMovies = () => {
+const GetRandomMovies = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -21,4 +21,4 @@ const GetMovies = () => {
   );
 };
 
-export default GetMovies;
+export default GetRandomMovies;

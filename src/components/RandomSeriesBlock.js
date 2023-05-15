@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import CarouselFade from "./Carousel";
 import "../styles/SeriesBlock.css";
-const GetSeries = () => {
+const GetRandomSeries = () => {
   const [tvShow, setTvShow] = useState([]);
 
   useEffect(() => {
@@ -22,4 +22,4 @@ const GetSeries = () => {
   );
 };
 
-export default GetSeries;
+export default GetRandomSeries;

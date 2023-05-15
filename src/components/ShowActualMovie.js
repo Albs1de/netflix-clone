@@ -1,4 +1,4 @@
-export default function ShowMovies() {
+export default function ShowActualMovie() {
   return (
     <div className="flex justify-center" style={{ backgroundColor: "black" }}>
       <figure className=" relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
