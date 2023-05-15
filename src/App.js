@@ -6,18 +6,33 @@ import Navbar from "./components/Navbar";
 import ShowMovies from "./components/ShowMovies";
 import GetMovies from "./components/ActionBlock";
 import GetSeries from "./components/SeriesBlock";
-
+import ShowSeries from "./components/ShowSeries";
 function App() {
   return (
     <div className="app-div">
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<ShowMovies />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <ShowMovies />
+                <GetMovies />
+              </>
+            }
+          />
+          <Route
+            path="/show-series"
+            element={
+              <>
+                <ShowSeries />
+                <GetSeries />
+              </>
+            }
+          />
         </Routes>
       </Router>
-      <GetMovies />
-      <GetSeries />
     </div>
   );
 }
