@@ -4,8 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ShowActualMovie from "./components/ShowActualMovie";
-import GetRandomMovies from "./components/RandomActionBlock";
-import GetRandomSeries from "./components/RandomSeriesBlock";
+import GetRandomMovies from "./components/APIFetches/RandomActionBlockAPI";
+import GetRandomSeries from "./components/APIFetches/RandomSeriesBlockAPI";
 import ShowSeries from "./components/ShowSeries";
 function App() {
   return (

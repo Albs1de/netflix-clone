@@ -1,7 +1,7 @@
 // GetSeries.js
 import React, { useEffect, useState } from "react";
-import CarouselFade from "./Carousel";
-import "../styles/SeriesBlock.css";
+import CarouselFade from "../Carousel";
+import "../../styles/RandomSeriesBlockAPI.css";
 const GetRandomSeries = () => {
   const [tvShow, setTvShow] = useState([]);
 
