@@ -12,6 +12,7 @@ const Navbar = () => {
           <Link to="/" className="mx-2">
             Home
           </Link>
+          <Link to="/src/components/SeriesBlock.js">Series</Link>
         </div>
       </div>
     </nav>

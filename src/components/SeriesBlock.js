@@ -16,7 +16,7 @@ const GetSeries = () => {
 
   return (
     <div>
-      <p>Some random Series</p>
+      <p className="heading-p">Some random Series</p>
       <CarouselFade movieOrTVShow={tvShow} />
     </div>
   );

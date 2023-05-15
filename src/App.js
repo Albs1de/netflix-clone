@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import ShowMovies from "./components/ShowMovies";
 import GetMovies from "./components/ActionBlock";
 import GetSeries from "./components/SeriesBlock";
+
 function App() {
   return (
     <div className="app-div">
