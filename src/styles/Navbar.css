@@ -1,0 +1,41 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .input-nav {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .navbar-div {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+  }
+  .nav-container {
+    justify-items: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .input-nav {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .navbar-div {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+  }
+  .nav-container {
+    justify-items: center;
+  }
+  .logo-name-link {
+    margin-right: 5px;
+    margin-left: -15px;
+    font-size: 15px !important;
+  }
+  .navbar-button {
+    width: 15%;
+    margin-right: 10px;
+    font-size: small;
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import MyList from "./MyList";
+import "../styles/Navbar.css";
 const Navbar = () => {
   const [searchValue, setSearchValue] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -25,19 +26,23 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black text-white p-3">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="font-semibold text-xl">
+      <div className="nav-container container mx-auto flex justify-between items-center">
+        <Link to="/" className="logo-name-link">
           Streamflix
         </Link>
-        <div>
+        <div className="navbar-div">
           <form onSubmit={handleSearchSubmit}>
             <input
+              className="input-nav"
               style={{ color: "black" }}
               type="text"
               value={searchValue}
               onChange={handleSearchChange}
             />
-            <button type="submit"> Search</button>
+            <button type="submit" className="navbar-button">
+              {" "}
+              Search
+            </button>
           </form>
           <Link to="/" className="mx-2">
             Home
