@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className="bg-black text-white p-3">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="font-semibold text-xl">
-          My Brand
+          Streamflix
         </Link>
         <div>
           <form onSubmit={handleSearchSubmit}>
