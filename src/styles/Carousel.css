@@ -1,3 +1,16 @@
 body {
   background-color: black;
 }
+
+@media (max-width: 320px) {
+  .carousel-img {
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .carousel-img {
+    margin-left: 25% !important;
+    margin-right: 25% !important;
+  }
+}

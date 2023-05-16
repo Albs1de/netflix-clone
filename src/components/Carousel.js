@@ -45,7 +45,7 @@ function CarouselFade({ movieOrTVShow }) {
           movieOrTVShow.map((movie, index) => (
             <div key={index}>
               <img
-                className="w-100"
+                className="w-90 carousel-img"
                 src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
                 alt={movie.title || movie.name}
               />
