@@ -3,7 +3,8 @@
     width: 40%;
     margin-left: 5%;
     margin-right: 5%;
-    color: white;
+    color: black;
+    background-color: white;
   }
   .navbar-div {
     display: flex;
@@ -20,7 +21,8 @@
     width: 50%;
     margin-left: 5%;
     margin-right: 5%;
-    color: white;
+    color: black;
+    background-color: white;
   }
   .navbar-div {
     display: flex;
@@ -45,7 +47,8 @@
   width: 40%;
   margin-left: 5%;
   margin-right: 5%;
-  color: white;
+  color: black;
+  background-color: white;
 }
 .navbar-div {
   display: flex;
