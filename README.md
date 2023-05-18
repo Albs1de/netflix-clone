@@ -36,7 +36,7 @@ npm start
 
 - Frontend
   - React
-  - CSS
+  - Javascript
 - API
   - The Movie Database API
 
