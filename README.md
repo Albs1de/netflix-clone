@@ -32,10 +32,13 @@ npm install
 npm start
 ```
 
-# Technologien
+## Technologien
 
-- React
-- The Movie Database API
+- Frontend
+  - React
+  - CSS
+- API
+  - The Movie Database API
 
 ## Zukünftige Verbesserungen
 
