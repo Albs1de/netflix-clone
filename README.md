@@ -34,10 +34,10 @@ npm start
 
 # Technologien
 
-React
-The Movie Database API
+- React
+- The Movie Database API
 
 ## Zukünftige Verbesserungen
 
-Erweiterung der Suchfunktionalität auf Serien.
-Integration von Film- und Serienbewertungen.
+- Erweiterung der Suchfunktionalität auf Serien.
+- Integration von Film- und Serienbewertungen.
