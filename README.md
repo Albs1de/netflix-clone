@@ -42,6 +42,6 @@ npm start
 
 ## Zukünftige Verbesserungen
 
-~ - Erweiterung der Suchfunktionalität auf Serien. ~ :heavy_check_mark:
+~~ - Erweiterung der Suchfunktionalität auf Serien. ~~ :heavy_check_mark:
 
 - Integration von Film- und Serienbewertungen.
