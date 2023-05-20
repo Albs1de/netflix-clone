@@ -25,6 +25,9 @@ const Navbar = () => {
       })
       .then(([movieData, seriesData]) => {
         setSearchResults([...movieData.results, ...seriesData.results]);
+      })
+      .catch((error) => {
+        console.log("Fehler beim Aufrufen der Daten: ", error);
       });
   };
 
