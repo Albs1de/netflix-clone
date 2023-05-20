@@ -9,14 +9,22 @@ const Navbar = () => {
 
   const handleSearchSubmit = (event) => {
     event.preventDefault();
-    fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&query=${searchValue}`
-    )
-      .then((response) => {
-        return response.json();
+    Promise.all([
+      fetch(
+        `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&query=${searchValue}`
+      ),
+      fetch(
+        `https://api.themoviedb.org/3/search/tv?api_key=${process.env.REACT_APP_API_KEY}&query=${searchValue}`
+      ),
+    ])
+      .then(([movieResponse, seriesResponse]) => {
+        if (!movieResponse.ok || !seriesResponse.ok) {
+          throw new Error("Fehler beim Aufrufen der Daten!");
+        }
+        return Promise.all([movieResponse.json(), seriesResponse.json()]);
       })
-      .then((data) => {
-        setSearchResults(data.results);
+      .then(([movieData, seriesData]) => {
+        setSearchResults([...movieData.results, ...seriesData.results]);
       });
   };
 
